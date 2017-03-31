@@ -7,14 +7,14 @@ const App = React.createClass({
   render () {
     return (
       <div className='app'>
-        <div className="landing">
+        <div className='landing'>
           <h1>svideo</h1>
-          <input type="text" placeholder='search' />
+          <input type='text' placeholder='search' />
           <a>or Browse all</a>
         </div>
       </div>
-    )
+    );
   }
-})
+});
 
 render(<App />, document.getElementById('app'));
