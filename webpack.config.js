@@ -21,6 +21,16 @@ module.exports = {
   },
   module: {
     rules: [{
+      enforce: 'pre',
+      test: /\.js$/,
+      loader: 'eslint-loader',
+      exclude: /node_modules/
+    },
+    {
+      test: /\.json$/,
+      loader: 'json-loader'
+    },
+    {
       include: path.resolve(__dirname, 'js'),
       test: /\.js$/,
       loader: 'babel-loader'
